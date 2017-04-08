@@ -1,0 +1,9 @@
+body,
+div,
+header,
+footer,
+h1 {
+	display: block;
+	margin: 0;
+	padding: 0;
+}

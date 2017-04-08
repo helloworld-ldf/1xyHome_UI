@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>用户登录</title>
+		<link rel="stylesheet" type="text/css" href="../css/myCss.css" />
+		<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+	</head>
+
+	<body style="width: 100%; margin-top: 0px; overflow:auto">
+		<div style="width: 1200px; min-height: 800px; margin: 0 auto;">
+			<!--顶部商标-->
+			<header style="margin: 30px 100px;">
+				<a href=""><img src="../img/logo.png" alt="..." class="img-rounded"></a>
+			</header>
+
+			<!--左图  右form-->
+			<div style="overflow: hidden;">
+				<div style="float: left;">
+					<img src="../img/ad.jpg" alt="..." class="img-rounded" style="margin-left: 100px;width: 400px; height: 500px;">
+				</div>
+
+				<div style="float: left; margin-left: 200px;margin-top: 50px;">
+					<form style="width: 300px;">
+						<div class="form-group">
+							<label for="">账号</label>
+							<input type="text" class="form-control" id="" placeholder="请输入6-20位账户名">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">密码</label>
+							<input type="password" class="form-control" id="" placeholder="请输入8-20位密码">
+						</div>
+						<div class="checkbox">
+							<label>
+						      <input type="checkbox"> 记住我
+						    </label>
+							<a href="forget_password.html" style="float: right;">忘记密码？</a>
+						</div>
+						<button type="button" class="btn btn-primary btn-lg btn-block" onclick="window.location.href='seller/home.html' ">登录</button>
+						<p style="margin: 10px 20px;">还没有账号？
+							<a href="regist.html" target="_top">免费注册</a>
+						</p>
+					</form>
+				</div>
+			</div>
+
+			<!--底部信息-->
+			<footer style="margin-top:50px;">
+				<div style="float:right;margin-right: 200px;">
+					<a class="site-info-nav__commitment " href="">
+						<img width="276 " height="24 " src="//s0.meituan.net/www/img/footer-commitment.png" alt="美团保障 ">
+					</a>
+				</div>
+				<div>
+					<p>
+						©<span>2017</span>
+						<a href="">1xy_蜗居网</a>
+						1xy_woju.com
+						<a href="" target="_blank ">京XXX证888888号</a>
+						A公网安备1234567890号
+						<a href="" target="_blank "> 电子公告服务规则</a>
+					</p>
+				</div>
+			</footer>
+		</div>
+
+		<script>
+			if(window.opener) { //判断是否有父窗口,即打开本页面的窗口  
+				var data = request.getParameter("hello");
+				alert(data);  
+			}
+		</script>
+	</body>
+
+</html>

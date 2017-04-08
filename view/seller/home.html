@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<style type="text/css">
+			.site-info__item {
+				margin-left: 30px;
+				float: left;
+			}
+			
+			.site-info__item h3 {
+				margin-left: 40px;
+				font-size: 15px;
+			}
+			
+			.site-info__item ul {
+				list-style: none;
+			}
+		</style>
+	</head>
+
+	<body style="width: 100%; margin-top: 0px; overflow:auto">
+		<div style="width: 1200px; min-height: 800px; margin: 0 auto;">
+			<!--底部水平导航栏菜单-->
+			<div style="background: whitesmoke; width: 100%; height: 45px; border-bottom: solid black 2px;">
+				<!--左登录注册收藏-->
+				<div style="float: left;margin-left:20px;line-height: 45px;">
+					<a href="">收藏网站</a>
+					<a href="" style="color: orange;">登录</a>
+					<a href="">注册</a>
+				</div>
+
+				<!--右导航菜单-->
+				<ul class="nav nav-tabs" style="float: right;">
+					<li role="presentation">
+						<a href="#">我的订单</a>
+					</li>
+					<li role="presentation" class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+							我的蜗居 <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li role="presentation">
+								<a href="#">我的订单</a>
+							</li>
+							<li role="presentation">
+								<a href="#">我的评价</a>
+							</li>
+							<li role="presentation">
+								<a href="#">我的收藏</a>
+							</li>
+							<li role="presentation">
+								<a href="#">我的余额</a>
+							</li>
+							<li role="presentation">
+								<a href="#">账户设置</a>
+							</li>
+						</ul>
+					</li>
+					<li role="presentation" class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+							联系客服 <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li role="presentation">
+								<a href="#">申请退款</a>
+							</li>
+							<li role="presentation">
+								<a href="#">申请退换货</a>
+							</li>
+							<li role="presentation">
+								<a href="#">换绑手机号</a>
+							</li>
+							<li role="presentation">
+								<a href="#">常见问题</a>
+							</li>
+						</ul>
+					</li>
+					<li role="presentation" class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+							我是商家 <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li role="presentation">
+								<a href="#">登录商家中心</a>
+							</li>
+							<li role="presentation">
+								<a href="#">我想合作</a>
+							</li>
+							<li role="presentation">
+								<a href="#">手机免费开店</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+			</div>
+
+			<!--左标题  中搜索   右图标-->
+			<div style="height: 100px; line-height: 100px;">
+				<!--左标题-->
+				<a href=""><img src="../../img/logo.png" alt="..." class="img-rounded"></a>
+				<!--中搜索-->
+				<div style="position: absolute; top: 75px;left: 500px; line-height: 30px;">
+					<input style="border-color: dodgerblue; width:290px;" type="" name="" id="" value="" />
+					<button style="border-color: dodgerblue;" onclick="window.location.href='search_result.html' ">搜索</button>
+				</div>
+
+				<!--右图标-->
+				<div style="float:right;">
+					<a class="site-info-nav__commitment " href="">
+						<img width="276 " height="24 " src="//s0.meituan.net/www/img/footer-commitment.png" alt="美团保障 ">
+					</a>
+				</div>
+			</div>
+
+			<!--bootstap导航-->
+			<ul class="nav nav-tabs" style="background: dodgerblue; height: 40px;">
+				<li role="presentation" style="margin-left: 120px;">
+					<a href="#" style="color: white;font-size: 20px;line-height: 20px;">首页</a>
+				</li>
+				<li role="presentation">
+					<a href="#" style="color: white;font-size: 20px;line-height: 20px;">经济型酒店</a>
+				</li>
+				<li role="presentation">
+					<a href="#" style="color: white;font-size: 20px;line-height: 20px;">豪华酒店</a>
+				</li>
+				<li role="presentation">
+					<a href="#" style="color: white;font-size: 20px;line-height: 20px;">主题酒店</a>
+				</li>
+				<li role="presentation">
+					<a href="#" style="color: white;font-size: 20px;line-height: 20px;">度假酒店</a>
+				</li>
+				<li role="presentation">
+					<a href="#" style="color: white;font-size: 20px;line-height: 20px;">公寓型酒店</a>
+				</li>
+				<li role="presentation">
+					<a href="#" style="color: white;font-size: 20px;line-height: 20px;">客栈</a>
+				</li>
+				<li role="presentation">
+					<a href="#" style="color: white;font-size: 20px;line-height: 20px;">青年旅社</a>
+				</li>
+			</ul>
+
+			<!--图片轮播-->
+			<div class="carousel slide" id="carousel-75235">
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#carousel-75235">
+					</li>
+					<li data-slide-to="1" data-target="#carousel-75235">
+					</li>
+					<li data-slide-to="2" data-target="#carousel-75235">
+					</li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img alt="" src="../../img/豪华酒店.jpg" style="width: 700px;height:400px;margin-left: 250px;" />
+						<div class="carousel-caption">
+							<h4>
+								逸豪酒店
+							</h4>
+							<p>
+								坐落于以大型CITY MALL经营模式闻名遐迩的金汇世纪广场内的逸豪酒店引，是江门首家五星级酒店。
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<img alt="" src="../../img/度假酒店.png" style="width: 700px;height:400px;margin-left: 250px;" />
+						<div class="carousel-caption">
+							<h4>
+								海船酒店
+							</h4>
+							<p>
+								Burj Al Arab（迪拜帆船酒店），位于阿联酋迪拜海湾，以金碧辉煌、奢华无比著称。阿拉伯塔酒店因外形酷似船帆，又称迪拜帆船酒店，酒店建在离沙滩岸边280米远的波斯湾内的人工岛上，仅由一条弯曲的道路连结陆地
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<img alt="" src="../../img/经济酒店.jpg" style="width: 700px;height:400px;margin-left: 250px;" />
+						<div class="carousel-caption">
+							<h4>
+								经济型酒店
+							</h4>
+							<p>
+								经济型酒店因剥离了高星级酒店的大量非核心功能，只为消费者提供安全卫生的客房服务（床+卫浴），从而使顾客花较少的钱就能享受睡眠
+							</p>
+						</div>
+					</div>
+				</div>
+				<a data-slide="prev" href="#carousel-75235" class="left carousel-control">‹</a>
+				<a data-slide="next" href="#carousel-75235" class="right carousel-control">›</a>
+			</div>
+
+			<div style="margin-top: 50px;">
+				<label style="font-size: 30px;">酒店</label>
+				<div style="float: right;">
+					<a style="border-right: solid 1px black;padding: 5px;">酒店</a>
+					<a style="border-right: solid 1px black;padding: 5px;">经济型酒店</a>
+					<a style="border-right: solid 1px black;padding: 5px;">主题酒店</a>
+					<a style="border-right: solid 1px black;padding: 5px;">豪华酒店</a>
+					<a>全部></a>
+				</div>
+			</div>
+
+			<!--酒店推荐区-->
+			<div style="overflow: auto;"> 
+				<div style="width: 290px;height: 310px; background-color: whitesmoke;float: left;">
+					<div style="width: 260px; height: 310px; margin: 0 auto; background-color: white;">
+						<div style="width: 260px; height: 190px; margin: 0 auto;">
+							<img src="../../img/1.jpg" />
+						</div>
+						<a href="">
+							【江华】住德乐连锁酒店<br/> 钟点房3小时，豪华双人房
+						</a><br />
+						<br />
+						<label style="color: orangered;">￥55</label>
+						<label style="float: right;">已售178</label>
+						<hr style="margin: 0;" />
+						<label style="float: right;">24人评价</label>
+					</div>
+				</div>
+				<div style="width: 290px;height: 310px; background-color: whitesmoke;float: left;">
+					<div style="width: 260px; height: 310px; margin: 0 auto; background-color: white;">
+						<div style="width: 260px; height: 190px; margin: 0 auto;">
+							<img src="../../img/2.jpg" />
+						</div>
+						<a href="">
+							【蓬江区】富宏宾馆<br/> 豪华单人房
+						</a><br />
+						<br />
+						<label style="color: orangered;">￥49</label>
+						<label style="float: right;">已售0</label>
+						<hr style="margin: 0;" />
+						<label style="float: right;">暂无评价</label>
+					</div>
+				</div>
+				<div style="width: 290px;height: 310px; background-color: whitesmoke;float: left;">
+					<div style="width: 260px; height: 310px; margin: 0 auto; background-color: white;">
+						<div style="width: 260px; height: 190px; margin: 0 auto;">
+							<img src="../../img/3.jpg" />
+						</div>
+						<a href="">
+							【新会区】陈皮红木酒店<br/> 豪华单人房，钟点房3小时
+						</a><br />
+						<br />
+						<label style="color: orangered;">￥99</label>
+						<label style="float: right;">已售21</label>
+						<hr style="margin: 0;" />
+						<label style="float: right;">3人评价</label>
+					</div>
+				</div>
+				<div style="width: 290px;height: 310px; background-color: whitesmoke;float: left;">
+					<div style="width: 260px; height: 310px; margin: 0 auto; background-color: white;">
+						<div style="width: 260px; height: 190px; margin: 0 auto;">
+							<img src="../../img/4.jpg" />
+						</div>
+						<a href="">
+							【麻园】7号精品公寓<br/> 钟点房3小时，标准双床房
+						</a><br />
+						<br />
+						<label style="color: orangered;">￥60</label>
+						<label style="float: right;">已售111</label>
+						<hr style="margin: 0;" />
+						<label style="float: right;">12人评价</label>
+					</div>
+				</div>
+
+			</div>
+			
+			<div style="overflow: auto;">
+				<div style="width: 290px;height: 310px; background-color: whitesmoke;float: left;">
+					<div style="width: 260px; height: 310px; margin: 0 auto; background-color: white;">
+						<div style="width: 260px; height: 190px; margin: 0 auto;">
+							<img src="../../img/5.jpg" />
+						</div>
+						<a href="">
+							【台山市】台山碧桂园凤凰酒店<br/> 豪华客房入住一晚
+						</a><br />
+						<br />
+						<label style="color: orangered;">￥509</label>
+						<label style="float: right;">已售0</label>
+						<hr style="margin: 0;" />
+						<label style="float: right;">暂无评价</label>
+					</div>
+				</div>
+				<div style="width: 290px;height: 310px; background-color: whitesmoke;float: left;">
+					<div style="width: 260px; height: 310px; margin: 0 auto; background-color: white;">
+						<div style="width: 260px; height: 190px; margin: 0 auto;">
+							<img src="../../img/6.jpg" />
+						</div>
+						<a href="">
+							【江华】侨光假日酒店<br/> 自主大床房钟点房4小时
+						</a><br />
+						<br />
+						<label style="color: orangered;">￥60</label>
+						<label style="float: right;">已售35</label>
+						<hr style="margin: 0;" />
+						<label style="float: right;">3人评价</label>
+					</div>
+				</div>
+				<div style="width: 290px;height: 310px; background-color: whitesmoke;float: left;">
+					<div style="width: 260px; height: 310px; margin: 0 auto; background-color: white;">
+						<div style="width: 260px; height: 190px; margin: 0 auto;">
+							<img src="../../img/7.jpg" />
+						</div>
+						<a href="">
+							【江华】7天连锁酒店<br/> 自主大床房钟点房4小时
+						</a><br />
+						<br />
+						<label style="color: orangered;">￥60</label>
+						<label style="float: right;">已售711</label>
+						<hr style="margin: 0;" />
+						<label style="float: right;">123人评价</label>
+					</div>
+				</div>
+				<div style="width: 290px;height: 310px; background-color: whitesmoke;float: left;">
+					<div style="width: 260px; height: 310px; margin: 0 auto; background-color: white;">
+						<div style="width: 260px; height: 190px; margin: 0 auto;">
+							<img src="../../img/8.jpg" />
+						</div>
+						<a href="">
+							【农林】海悦酒店<br/> VIP豪华房钟点房3小时
+						</a><br />
+						<br />
+						<label style="color: orangered;">￥68</label>
+						<label style="float: right;">已售16</label>
+						<hr style="margin: 0;" />
+						<label style="float: right;">2人评价</label>
+					</div>
+				</div>
+
+			</div>
+
+			<hr />
+
+			<!--合作区域-->
+			<!--<div class="site-outer" id="yui_3_16_0_1_1489505849590_9485" style="overflow: auto;">
+				<div class="site-info" id="yui_3_16_0_1_1489505849590_9484">
+					<div class="site-info__item" id="yui_3_16_0_1_1489505849590_9491">
+						<h3 id="yui_3_16_0_1_1489505849590_9490">获取更新</h3>
+						<ul>
+							<li>
+								<a rel="nofollow" href="http://www.meituan.com/maillist/subscribe">邮件订阅</a>
+							</li>
+							<li>
+								<a href="http://www.meituan.com/mobile/">iPhone/Android</a>
+							</li>
+							<li>
+								<a rel="nofollow" href="http://user.qzone.qq.com/97231705" target="_blank">美团QQ空间</a>
+							</li>
+							<li>
+								<a rel="nofollow" href="http://t.sina.com.cn/meituanjiangmen" target="_blank">美团新浪微博</a>
+							</li>
+							<li>
+								<a href="//www.meituan.com/sitemap/citysitemap.php" target="_blank">sitemap</a>
+							</li>
+							<li>
+								<a rel="nofollow" href="/feed/jiangmen" target="_blank">RSS订阅</a>
+							</li>
+						</ul>
+					</div>
+					<div class="site-info__item">
+						<h3>商务合作</h3>
+						<ul>
+							<li>
+								<a rel="nofollow" href="http://emis.meishi.meituan.com/merchantsSettled" gaevent="footer/seller">商家合作</a>
+							</li>
+							<li>
+								<a rel="nofollow" href="http://zhaoshang.meituan.com/" gaevent="footer/mmp">美团商家营销平台</a>
+							</li>
+							<li>
+								<a rel="nofollow" href="//daili.meituan.com/?comeFrom=mtwebBusinesscoopd" target="_blank">到店餐饮代理商招募</a>
+							</li>
+							<li>
+								<a rel="nofollow" href="http://www.meituan.com/about#contact">市场合作</a>
+							</li>
+							<li>
+								<a rel="nofollow" href="http://union.meituan.com/" target="_blank">美团联盟</a>
+							</li>
+							<li>
+								<a rel="nofollow" target="_blank" href="http://mos.meituan.com">美团云</a>
+							</li>
+							<li>
+								<a rel="nofollow" target="_blank" href="mailto:lianzheng@meituan.com">廉正邮箱</a>
+							</li>
+							<li>
+								<a rel="nofollow" target="_blank" href="http://developer.meituan.com/?applyFrom=meituan_c_pc_home#/home?_k=876stc">聚宝盆餐饮开放平台</a>
+							</li>
+						</ul>
+					</div>
+					<div class="site-info__item">
+						<h3>公司信息</h3>
+						<ul>
+							<li>
+								<a rel="nofollow" href="http://www.meituan.com/about/">关于美团</a>
+							</li>
+							<li>
+								<a rel="nofollow" href="http://www.meituan.com/commitment/">美团承诺</a>
+							</li>
+							<li>
+								<a rel="nofollow" href="http://www.meituan.com/about/press">媒体报道</a>
+							</li>
+							<li>
+								<a rel="nofollow" href="http://zhaopin.meituan.com" gaevent="footer/job">加入我们</a>
+							</li>
+							<li>
+								<a rel="nofollow" href="http://www.meituan.com/about/law">法律声明</a>
+							</li>
+							<li>
+								<a rel="nofollow" href="http://www.meituan.com/about/terms">用户协议</a>
+							</li>
+							<li>
+								<a rel="nofollow" href="http://www.meituan.com/about/saferule">美团点评餐饮安全管理办法</a>
+							</li>
+							<li>
+								<a href="http://www.meituan.com/about/license">营业执照</a>
+							</li>
+						</ul>
+					</div>
+					<div class="site-info__item">
+						<h3>用户帮助</h3>
+						<ul>
+							<li>
+								<a rel="nofollow" class="J-selfservice-tab" data-tab="0" href="http://www.meituan.com/help/selfservice">申请退款</a>
+							</li>
+							<li>
+								<a rel="nofollow" class="J-selfservice-tab" data-tab="2" href="http://www.meituan.com/help/selfservice?tab=2">查看美团券密码</a>
+							</li>
+							<li>
+								<a rel="nofollow" href="http://www.meituan.com/help/faq">常见问题</a>
+							</li>
+							<li>
+								<a rel="nofollow" href="http://www.meituan.com/help/api">开放API</a>
+							</li>
+							<li>
+								<a rel="nofollow" href="http://www.meituan.com/about/anticheat">反诈骗公告</a>
+							</li>
+						</ul>
+					</div>
+					<div class="site-info__item site-info__item--service" id="yui_3_16_0_1_1489505849590_9483">
+						<div class="site-info-service-content">
+							<i class="hotline"></i>
+							<p class="contact-name">客服电话</p>
+							<p class="contact-info">
+								<span class="contact-numbers">10107888</span>
+								<span class="contact-time">(9:00-23:00)</span>
+							</p>
+							<p class="desc">退款、退换货、查看美团券</p>
+							<p>
+								<a href="http://www.meituan.com/help/selfservice" class="selfservice-link" gaevent="footer/selfservice">参考教程，轻松搞定!</a>
+							</p>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>-->
+
+			<hr />
+
+			<!--底部公司信息-->
+			<footer style="margin:100px auto; width: 700px;">
+				<div>
+					<p>
+						©<span>2017</span>
+						<a href="">1xy_蜗居网</a>
+						1xy_woju.com
+						<a href="" target="_blank ">京XXX证888888号</a>
+						A公网安备1234567890号
+						<a href="" target="_blank "> 电子公告服务规则</a>
+					</p>
+				</div>
+			</footer>
+		</div>
+
+		<script src="../../js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>
